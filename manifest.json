@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "My YouTube Button Extension",
+    "version": "1.0",
+    "description": "Adds a custom button to the YouTube video bar.",
+    "permissions": ["https://www.youtube.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["content_scripts/youtube.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "resources/images/fa-computer.svg"
+    ]
+}
